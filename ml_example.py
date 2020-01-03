@@ -37,7 +37,6 @@ def prepare_training_data(dataset, stages):
 
 
 df = spark.table('heart_csv')
-display(dataset)
 
 # Prepare the dataset for using the pipeline model and keep relevant columns
 pipeline_stages = build_pipeline_stages(df, 'target')
